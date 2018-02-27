@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
-Import DungeonCrawl;
+package DugeonCrawlStart;
 
 import java.util.Scanner;
 
@@ -18,22 +17,28 @@ public class Dungeon
    
     public static Object[] dungeon = new Object[10];
     public int heroSpot = 0;
-    public static Hero h = new Hero();
-    TrappedTreasure t = new TrappedTreasure();
-    Dragon d = new Dragon();
-    Potions p = new Potions();
-    Monster m = new Monster();
+    
+    
     // creates dungeon
-    public void createDungeon(Monster m)
+    public void createDungeon(Monster m, Hero h, TrappedTreasure t, Potions p, Dragon d)
     {
        System.out.println("\t\t\t   DUNGEON CRAWLER VERSION 1");
        Dungeon.titleEmoto();
        System.out.println("\t\tSelect your difficulty: 1 = easy, 2 = medium, 3 = hard:");
        dungeon[0] = h;
-       this.selectDifficulty();
+       this.selectDifficulty(m,t,p,d);
     }
-    public void moveHero(int x)
-    {   
+
+    /**
+     *
+     * @param x
+     * @param t
+     * @param h
+     * @param p
+     * @param d
+     */
+    
+    public void moveHero(int x, TrappedTreasure t, Hero h, Potions p, Dragon d, Monster m)    {   
         if(dungeon[heroSpot + 1] == null)
         {
             System.out.println("\nThe Hero opens the door to the next room and there is nothing there");
@@ -92,7 +97,7 @@ public class Dungeon
             }  
         }   
     }
-    public void selectDifficulty()
+    public void selectDifficulty(Monster m, TrappedTreasure t, Potions p, Dragon d)
     {
        Scanner scan = new Scanner(System.in);
        
@@ -121,7 +126,7 @@ public class Dungeon
            dungeon[8] = d;
            dungeon[5] = p;
            dungeon[3] = t;
-           dungeon[6] = t;
+           
            dungeon[7] = m;
        }
     }
@@ -165,4 +170,3 @@ public class Dungeon
     }
     
 }
-
