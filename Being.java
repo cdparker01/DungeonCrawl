@@ -10,7 +10,7 @@ import DungeonCrawl.Test;
  *
  * @author chandlerparker
  */
-public abstract class Being extends Test
+public abstract class Being extends Dungeon
 {
     private int health;
     private int stamina;
