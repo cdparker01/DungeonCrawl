@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
+package DugeonCrawlStart;
 
 import static DugeonCrawlStart.Dungeon.dungeon;
-import static DugeonCrawlStart.Dungeon.h;
 import java.util.Scanner;
 
 /**
@@ -41,7 +40,6 @@ public class TrappedTreasure extends Being
             else if(input == 3)
             {
                 System.out.println("The hero is teleported to the begining and a monster spawned in every room. Fight your way out...");
-                h.health = 200;
                 dungeon[d.heroSpot +1] = null;
                 dungeon[d.heroSpot] = null;
                 dungeon[d.heroSpot = 0] = h;
@@ -75,11 +73,5 @@ public class TrappedTreasure extends Being
         System.out.println("              |==== .'.'^'.'.====|");
         System.out.println("              |  _\\o/   __  {.' __  '.} _   _\\o/  _|");
         System.out.println("              `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        
     }
 }
-
