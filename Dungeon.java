@@ -12,10 +12,9 @@ import java.util.Scanner;
  *
  * @author cdparker01
  */
-public class Dungeon
+public class Dungeon extends Test
 {
    
-    public static Object[] dungeon = new Object[10];
     public int heroSpot = 0;
     
     
