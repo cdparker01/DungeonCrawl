@@ -11,8 +11,10 @@ import java.util.Scanner;
  *
  * @author cdparker01
  */
-public class Test extends Dungeon
+public class Test 
 {
+    public static Object[] dungeon = new Object[10];
+
    
     public static void main(String[] args)
     {
