@@ -9,7 +9,7 @@ package DugeonCrawlStart;
  *
  * @author chandlerparker
  */
-public abstract class Being
+public abstract class Being extends Test
 {
     private int health;
     private int stamina;
