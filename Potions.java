@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
+package DugeonCrawlStart;
 
 import static DugeonCrawlStart.Dungeon.dungeon;
-import static DugeonCrawlStart.Dungeon.h;
 import java.util.Scanner;
 
 /**
@@ -55,4 +54,3 @@ public class Potions
         System.out.println("     `.___.'");
     }
 }
-
