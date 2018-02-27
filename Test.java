@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
+package DugeonCrawlStart;
 
 import java.util.Scanner;
 
@@ -16,18 +16,26 @@ public class Test extends Dungeon
    
     public static void main(String[] args)
     {
+        Dragon dra = new Dragon();
+        Potions p = new Potions();
+        Monster m = new Monster();
         Dungeon d = new Dungeon();
-        d.createDungeon(new Monster());
+        Hero h = new Hero();
+        TrappedTreasure t = new TrappedTreasure();
+        d.createDungeon(m,h,t,p,dra);
+        
+        
 
         while(d.heroSpot != dungeon.length - 1 && h.health > 0)
         {   
             Scanner scan = new Scanner(System.in);
             int input = scan.nextInt();
+            String opp = scan.nextLine();
             
             if(input == 1)
             { 
                 System.out.println("\nHero moves Forward");
-                d.moveHero(input);
+                d.moveHero(input,t,h,p,dra,m);
                 
             }
             else
@@ -80,4 +88,3 @@ public class Test extends Dungeon
         System.out.println("             ^^\\..___,.--`");
     }
 }
-
