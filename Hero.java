@@ -1,84 +1,55 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+ * To change his license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
-
-import java.util.Scanner;
-import DungeonCrawlStart.Dungeon;
+package DugeonCrawlStart;
 
 /**
  *
  * @author cdparker01
  */
-public class Test extends Dungeon
+public class Hero extends Being
 {
-   
-    public static void main(String[] args)
+    int strength = 10;
+    public int health = 20;
+    String name = "Hero";
+    
+    public int attack(Monster m)
     {
-        Dungeon d = new Dungeon();
-        d.createDungeon(new Monster());
-
-        while(d.heroSpot != dungeon.length - 1 && h.health > 0)
-        {   
-            Scanner scan = new Scanner(System.in);
-            int input = scan.nextInt();
-            
-            if(input == 1)
-            { 
-                System.out.println("\nHero moves Forward");
-                d.moveHero(input);
-                
-            }
-            else
-            {
-                System.out.println("Error wrong key entered");
-            }
-            
-            System.out.println("\nEnter 1 to move Forward:");
-        }
+        m.health = m.health - this.strength;
         
-        if(h.health > 0)
-        {
-            System.out.println("\nYOU WIN! The Hero finished the dungeon");
-            h.emtoHero();
-        }
-        else
-        {
-            System.out.println("\nGAME OVER: The Hero was killed");
-            Test.end();
-        }
-        
+        return m.health;
     }
-    public static void end()
+    public int getHealth()
     {
-        //25
-        System.out.println("                           ,--.");
-        System.out.println("                          {    }");
-        System.out.println("                          K,   }");
-        System.out.println("                         /  `Y`");
-        System.out.println("                    _   /   /");    
-        System.out.println("                   {_'-K.__/");
-        System.out.println("                     `/-.__L._");
-        System.out.println("                     /  ' /`\\_}");
-        System.out.println("                    /  ' /     ");
-        System.out.println("            ____   /  ' /");
-        System.out.println("     ,-'~~~~    ~~/  ' /_");
-        System.out.println("   ,'             ``~~~%%',");
-        System.out.println("  (                     %  Y");
-        System.out.println(" {                      %% I");
-        System.out.println("{      -                 %  `.");
-        System.out.println("|       ',                %  )");
-        System.out.println("|        |   ,..__      __. Y");
-        System.out.println("|    .,_./  Y ' / ^Y   J   )|");
-        System.out.println("\\           |' /   |   |   ||");
-        System.out.println(" \\          L_/    . _ (_,.'(");
-        System.out.println("  \\,   ,      ^^\"\"' / |      )");
-        System.out.println("    \\_  \\          /,L]     /");
-        System.out.println("      '-_`-,       ` `   ./`");
-        System.out.println("         `-(_            )");
-        System.out.println("             ^^\\..___,.--`");
+        return this.health;
+    }
+    public void emtoHero()
+    {
+        //20
+        System.out.println("      _,.");
+        System.out.println("    ,` -.)");
+        System.out.println("   ( _/-\\\\-._");
+        System.out.println("  /,|`--._,-^|            ,");
+        System.out.println("  \\_| |`-._/||          ,'|");
+        System.out.println("    |  `-, / |         /  /");
+        System.out.println("    |     || |        /  /");
+        System.out.println("     `r-._||/   __   /  /");
+        System.out.println(" __,-<_     )`-/  `./  /");
+        System.out.println("'  \\   `---'   \\   /  /");
+        System.out.println("    |           |./  /");
+        System.out.println("    /           //  /");
+        System.out.println("\\_/' \\         |/  /");
+        System.out.println(" |    |   _,^-'/  /");
+        System.out.println(" |    , ``  (\\/  /_");
+        System.out.println("  \\,.->._    \\X-=/^");
+        System.out.println("  (  /   `-._//^`");
+        System.out.println("   `Y-.____(__}");
+        System.out.println("    |     {__)");
+        System.out.println("          ()");
+        
     }
 }
+
 
