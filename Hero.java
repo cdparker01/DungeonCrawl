@@ -5,6 +5,7 @@
  */
 package DugeonCrawl;
 import DungeonCrawl.Test;
+import DungeonCrawl.Monster;
 
 /**
  *
