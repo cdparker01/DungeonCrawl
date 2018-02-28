@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package Desktop.Github.DugeonCrawl;
-import Desktop.GitHub.DungeonCrawl.Dragon;
-
 import java.util.Scanner;
 
 /**
