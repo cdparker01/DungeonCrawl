@@ -5,6 +5,11 @@
  */
 package DugeonCrawl;
 import DungeonCrawl.Test;
+import DungeonCrawl.Monster;
+import DungeonCrawl.Hero;
+import DungeonCrawl.TrappedTreasure;
+import DungeonCrawl.Potions;
+import DungeonCrawl.Dragon;
 
 import java.util.Scanner;
 
