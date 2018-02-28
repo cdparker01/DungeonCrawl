@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package DugeonCrawl;
-import Desktop.DungeonCrawl.Test;
+import Desktop.GitHub.DungeonCrawl;
 
 /**
  *
