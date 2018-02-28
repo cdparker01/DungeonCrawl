@@ -4,6 +4,12 @@
  * and open the template in the editor.
  */
 package DugeonCrawl;
+import DungeonCrawl.Monster;
+import DungeonCrawl.Hero;
+import DungeonCrawl.TrappedTreasure;
+import DungeonCrawl.Potions;
+import DungeonCrawl.Dragon;
+
 
 
 import java.util.Scanner;
