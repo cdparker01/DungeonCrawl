@@ -4,9 +4,11 @@
  * and open the template in the editor.
  */
 package DugeonCrawl;
-import DungeonCrawl.Test;
+import static DungeonCrawl.Test;
 
-import static DugeonCrawlStart.Dungeon.dungeon;
+
+import static DungeonCrawl.Hero;
+import static DungeonCrawl.Dungeon;
 import java.util.Scanner;
 
 /**
