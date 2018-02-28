@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DugeonCrawl;
-import Desktop.GitHub.DungeonCrawl;
+package Desktop.Github.DugeonCrawl;
 
 
 import java.util.Scanner;
