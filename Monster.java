@@ -5,6 +5,8 @@
  */
 package DugeonCrawl;
 import DungeonCrawl.Test;
+import DungeonCrawl.Monster;
+import DungeonCrawl.Hero;
 
 import static DugeonCrawlStart.Dungeon.dungeon;
 import java.util.Scanner;
