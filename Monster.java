@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 package DugeonCrawl;
-import DungeonCrawl.Test;
-import DungeonCrawl.Monster;
-import DungeonCrawl.Hero;
-
-import static DugeonCrawlStart.Dungeon.dungeon;
+import Desktop.GitHub.DungeonCrawl;
 import java.util.Scanner;
 
 /**
